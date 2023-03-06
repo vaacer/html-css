@@ -1,0 +1,22 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Russian';
+    src: url('fonts/Russian.ttf') format('opentype'), url('fonts/Russian.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    /* Tipos de format()
+    - opentype (otf)
+    - truetype (ttf)
+    - embedded-opentype
+    - truetype-att (apple advenced typography)
+    - svg
+    */
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-family: 'Russian',Times, serif;
+    font-size: 3em;
+    font-weight: normal;
+}
