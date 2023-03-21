@@ -13,6 +13,14 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         td, th {
@@ -21,11 +29,28 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(49, 49, 49);
             color: white;
         }
 
-        .num {
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(49, 49, 49);
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+            font-weight: bold;
+
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+            text-decoration: underline;
+        }
+
+        td.num {
             text-align: right;
         }
 
@@ -34,10 +59,11 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>estado</th>
-                <th>população</th>
+                <th scope="col">estado</th>
+                <th scope="col" style="width: 50px;">população</th>
             </tr>
         </thead>
         <tbody>
@@ -65,13 +91,86 @@
                 <td>Paraiba</td>
                 <td class="num">1.393.937</td>
             </tr>
+            <tr>
+                <td>São paulo</td>
+                <td class="num">45.625.826</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.372.383</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.273.283</td>
+            </tr>
+            <tr>
+                <td>Amápa</td>
+                <td class="num">83.937.937</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">12.937.182</td>
+            </tr>
+            <tr>
+                <td>Paraiba</td>
+                <td class="num">1.393.937</td>
+            </tr>
+            <tr>
+                <td>São paulo</td>
+                <td class="num">45.625.826</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.372.383</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.273.283</td>
+            </tr>
+            <tr>
+                <td>Amápa</td>
+                <td class="num">83.937.937</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">12.937.182</td>
+            </tr>
+            <tr>
+                <td>Paraiba</td>
+                <td class="num">1.393.937</td>
+            </tr>
+            <tr>
+                <td>São paulo</td>
+                <td class="num">45.625.826</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.372.383</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.273.283</td>
+            </tr>
+            <tr>
+                <td>Amápa</td>
+                <td class="num">83.937.937</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">12.937.182</td>
+            </tr>
+            <tr>
+                <td>Paraiba</td>
+                <td class="num">1.393.937</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>201.147.125</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus tempore, deleniti provident quas eum perferendis laborum! Pariatur inventore rerum incidunt repellendus perspiciatis sint dolorum velit debitis accusantium laudantium, sequi dolores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi inventore, vitae nihil debitis voluptas earum maiores ad magni perferendis dolores consequuntur! Eaque quas, voluptatibus odio sequi possimus neque sit atque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, labore! Eum illum quas quod voluptatum reiciendis similique accusantium iusto ratione suscipit perferendis ad nostrum, impedit, officiis soluta quam repellendus harum.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus tempore, deleniti provident quas eum perferendis laborum! Pariatur inventore rerum incidunt repellendus perspiciatis sint dolorum velit debitis accusantium laudantium, sequi dolores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi inventore, vitae nihil debitis voluptas earum maiores ad magni perferendis dolores consequuntur! Eaque quas, voluptatibus odio sequi possimus neque sit atque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, labore! Eum illum quas quod voluptatum reiciendis similique accusantium iusto ratione suscipit perferendis ad nostrum, impedit, officiis soluta quam repellendus harumLorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus tempore, deleniti provident quas eum perferendis laborum! Pariatur inventore rerum incidunt repellendus perspiciatis sint dolorum velit debitis accusantium laudantium, sequi dolores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi inventore, vitae nihil debitis voluptas earum maiores ad magni perferendis dolores consequuntur! Eaque quas, voluptatibus odio sequi possimus neque sit atque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, labore! Eum illum quas quod voluptatum reiciendis similique accusantium iusto ratione suscipit perferendis ad nostrum, impedit, officiis soluta quam repellendus harumLorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus tempore, deleniti provident quas eum perferendis laborum! Pariatur inventore rerum incidunt repellendus perspiciatis sint dolorum velit debitis accusantium laudantium, sequi dolores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi inventore, vitae nihil debitis voluptas earum maiores ad magni perferendis dolores consequuntur! Eaque quas, voluptatibus odio sequi possimus neque sit atque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, labore! Eum illum quas quod voluptatum reiciendis similique accusantium iusto ratione suscipit perferendis ad nostrum, impedit, officiis soluta quam repellendus harumLorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus tempore, deleniti provident quas eum perferendis laborum! Pariatur inventore rerum incidunt repellendus perspiciatis sint dolorum velit debitis accusantium laudantium, sequi dolores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi inventore, vitae nihil debitis voluptas earum maiores ad magni perferendis dolores consequuntur! Eaque quas, voluptatibus odio sequi possimus neque sit atque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, labore! Eum illum quas quod voluptatum reiciendis similique accusantium iusto ratione suscipit perferendis ad nostrum, impedit, officiis soluta quam repellendus harumLorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus tempore, deleniti provident quas eum perferendis laborum! Pariatur inventore rerum incidunt repellendus perspiciatis sint dolorum velit debitis accusantium laudantium, sequi dolores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi inventore, vitae nihil debitis voluptas earum maiores ad magni perferendis dolores consequuntur! Eaque quas, voluptatibus odio sequi possimus neque sit atque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, labore! Eum illum quas quod voluptatum reiciendis similique accusantium iusto ratione suscipit perferendis ad nostrum, impedit, officiis soluta quam repellendus harumLorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus tempore, deleniti provident quas eum perferendis laborum! Pariatur inventore rerum incidunt repellendus perspiciatis sint dolorum velit debitis accusantium laudantium, sequi dolores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi inventore, vitae nihil debitis voluptas earum maiores ad magni perferendis dolores consequuntur! Eaque quas, voluptatibus odio sequi possimus neque sit atque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, labore! Eum illum quas quod voluptatum reiciendis similique accusantium iusto ratione suscipit perferendis ad nostrum, impedit, officiis soluta quam repellendus harum</p>
 </body>
 </html>
