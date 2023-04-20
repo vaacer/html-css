@@ -49,10 +49,12 @@ menu > ul > li > a {
     background-color: rgb(86, 86, 86);
     color: white;
     border-top: 2px solid gray;
+    border-radius: 8px;
+    transition: 0.5s;
 }
 
 menu > ul> li > a:hover {
-    background-color: rgb(95, 95, 95);
+    background-color: rgb(134, 134, 134);
 }
 
 main {
